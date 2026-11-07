@@ -1,0 +1,14 @@
+[package]
+name = "py-arborium"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.90"
+publish = false
+
+[lib]
+name = "arborium"
+crate-type = ["cdylib"]
+
+[dependencies]
+arborium = { "version" = "2.18.2", features = ["all-languages"] }
+pyo3 = { "version" = "0.29.0", features = ["abi3-py310"] }
